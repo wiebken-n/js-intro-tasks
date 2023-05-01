@@ -4,10 +4,10 @@ function welcomeMsg(name) {
   return "Welcome " + name + "!";
 }
 
-var person = "Jane";
+let person = "Jane";
 console.log(welcomeMsg(person));
 
-var person = "Marc";
+person = "Marc";
 console.log(welcomeMsg(person));
 
 //
@@ -25,14 +25,14 @@ console.log(calcGrossPrice(40, 0.16));
 //
 // 03 - Add positive function
 
-function addPositive(a, b) {
-  if (a < 0) {
-    a *= -1;
+function addPositive(NumberOne, NumberTwo) {
+  if (NumberOne < 0) {
+    NumberOne *= -1;
   }
-  if (b < 0) {
-    b *= -1;
+  if (NumberTwo < 0) {
+    NumberTwo *= -1;
   }
-  result = a + b;
+  result = NumberOne + NumberTwo;
   return result;
 }
 
@@ -41,8 +41,8 @@ console.log(addPositive(3, -5));
 console.log(addPositive(-1, -8));
 
 // alternative solution
-function altAddPositive(a, b) {
-  result = Math.abs(a) + Math.abs(b);
+function altAddPositive(NumberOne, NumberTwo) {
+  result = Math.abs(NumberOne) + Math.abs(NumberTwo);
   return result;
 }
 console.log(altAddPositive(2, 3));
